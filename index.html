@@ -3,33 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dist/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
-<body>
-    <header>
-        <div>
-            <div>
-                <img src="" alt="Logo do site">
-                <h1>Previsão do Tempo</h1>
-            </div>
+<body class="bg-sky-300 font-[Montserrat] text-white">
+    <header class="my-10">
+        <div class="flex justify-center items-center gap-2">
+            <img src="assets/logo.png" alt="">
+            <h1 class="font-semibold text-3xl">Previsão do Tempo</h1>
         </div>
     </header>
-    <main>
+    <main class="mx-8">
         <section> <!-- pesquisa --> 
-            <div>
-                <div>
-                    <img src="" alt="Icon lupa pesquisa">
+            <div class="flex gap-2 items-center">
+                <div class="flex justify-between items-center bg-sky-200 rounded-lg py-1 px-3 w-full">
+                    <div class="flex items-center gap-2">
+                        <div>
+                            <img src="assets/procurar.png" alt="Icon lupa pesquisa">
+                        </div>
+                        <div>
+                            <input id="cidade" type="text" placeholder="Buscar cidade...">
+                        </div>
+                    </div>   
                 </div>
-                <div>
-                    <div>
-                        <p>Buscar cidade...</p>
-                    </div>
-                </div>
-                <div>
-                    <a href="">Buscar</a>
+                <div class="rounded-lg bg-sky-400 py-1 px-3 font-medium">
+                    <button onclick="buscarClima()">Buscar</button>
                 </div>
             </div>
         </section>
+
+        <section>
+            <div id="resultado">
+                
+            </div>
+        </section>
     </main>
+    <script src="script.js"></script>
 </body>
 </html>
