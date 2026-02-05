@@ -16,7 +16,7 @@
     </header>
     <main class="mx-8">
         <section> <!-- pesquisa --> 
-            <div class="flex gap-2 items-center">
+            <div class="flex gap-2 items-center mb-5">
                 <div class="flex justify-between items-center bg-sky-200 rounded-lg py-1 px-3 w-full">
                     <div class="flex items-center gap-2">
                         <div>
@@ -33,11 +33,59 @@
             </div>
         </section>
 
-        <section>
-            <div id="resultado">
-                
-            </div>
-        </section>
+        <div class="bg-sky-200 rounded-lg p-7">
+            <section> <!-- dia atual --> 
+                <div class="mb-15">
+                    <h3 id="nome-cidade" class="text-2xl font-semibold">Jaraguá do Sul</h3>
+                    <p id="data">Quarta-Feira, 04 de Fevereiro</p>
+                </div>
+                <div>
+                    <div class="flex items-center gap-5 justify-center mb-4">
+                        <div>
+                            <img id="icone-temp" src="assets/nublado.png" alt="Icone de representação do clima">
+                        </div>
+                        <h2 id="temperatura" class="text-6xl text-center font-bold">24°C</h2>
+                    </div>
+                    <p id="tempo" class="font-medium text-center">Nublado</p>
+                    <div>
+                        <div>
+                            <img src="assets/vento.png" alt="Icone de vento">
+                            <p id="velocidade-vento">15.3 km/h</p>
+                        </div>
+                        <div>
+                            <img src="assets/umidade.png" alt="Icone de umidade">
+                            <p id="umidade">63%</p>
+                        </div>
+                    </div>
+                </div>
+                <div >
+                    <p id="frase">Que tal aproveitar para visitar um museu ou cinema hoje?</p>
+                </div>
+            </section>
+
+            <section> <!-- proximos dias --> 
+                <div>
+                    <p>Próximos dias</p>
+                    <div>
+                        <div>
+                            <p>qui.</p>
+                            <img src="" alt="Icone do tempo">
+                            <p id="temperatura-dia-um">26°C</p>
+                        </div>
+                        <div>
+                            <p>sex.</p>
+                            <img src="" alt="Icone do tempo">
+                            <p id="temperatura-dia-dois">28°C</p>
+                        </div>
+                        <div>
+                            <p>sáb.</p>
+                            <img src="" alt="Icone do tempo">
+                            <p id="temperatura-dia-tres">30°C</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
     </main>
     <script src="script.js"></script>
 </body>
