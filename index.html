@@ -14,7 +14,7 @@
             <h1 class="font-semibold text-3xl">Previsão do Tempo</h1>
         </div>
     </header>
-    <main class="mx-8">
+    <main class="max-w-85 md:max-w-lg lg:max-w-4xl mx-auto">
         <section> <!-- pesquisa --> 
             <div class="flex gap-2 items-center mb-5">
                 <div class="flex justify-between items-center bg-sky-200 rounded-lg py-1 px-3 w-full">
@@ -46,40 +46,40 @@
                         </div>
                         <h2 id="temperatura" class="text-6xl text-center font-bold">24°C</h2>
                     </div>
-                    <p id="tempo" class="font-medium text-center">Nublado</p>
-                    <div>
-                        <div>
+                    <p id="tempo" class="font-medium text-center mb-3">Nublado</p>
+                    <div class="flex gap-10 justify-center mb-10">
+                        <div class="flex gap-2 items-center">
                             <img src="assets/vento.png" alt="Icone de vento">
                             <p id="velocidade-vento">15.3 km/h</p>
                         </div>
-                        <div>
+                        <div class="flex gap-2 items-center">
                             <img src="assets/umidade.png" alt="Icone de umidade">
                             <p id="umidade">63%</p>
                         </div>
                     </div>
                 </div>
-                <div >
+                <div class="text-center mb-15">
                     <p id="frase">Que tal aproveitar para visitar um museu ou cinema hoje?</p>
                 </div>
             </section>
 
             <section> <!-- proximos dias --> 
                 <div>
-                    <p>Próximos dias</p>
-                    <div>
-                        <div>
+                    <p class="mb-5">Próximos dias</p>
+                    <div class="flex justify-between">
+                        <div class="flex flex-col gap-3 items-center bg-sky-300 rounded-lg p-5 w-22">
                             <p>qui.</p>
-                            <img src="" alt="Icone do tempo">
+                            <img src="assets/sol.png" alt="Icone do tempo">
                             <p id="temperatura-dia-um">26°C</p>
                         </div>
-                        <div>
+                        <div class="flex flex-col gap-3 items-center bg-sky-300 rounded-lg p-5 w-22">
                             <p>sex.</p>
-                            <img src="" alt="Icone do tempo">
+                            <img src="assets/chuva.png" alt="Icone do tempo">
                             <p id="temperatura-dia-dois">28°C</p>
                         </div>
-                        <div>
+                        <div class="flex flex-col gap-3 items-center bg-sky-300 rounded-lg p-5 w-22">
                             <p>sáb.</p>
-                            <img src="" alt="Icone do tempo">
+                            <img src="assets/nublado-menor.png" alt="Icone do tempo">
                             <p id="temperatura-dia-tres">30°C</p>
                         </div>
                     </div>
