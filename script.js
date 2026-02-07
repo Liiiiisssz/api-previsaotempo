@@ -98,11 +98,11 @@ async function buscarClima(){
 
         switch(codTempo){
             case 0: case 1:
-                iconeTempo = "assets/sol-grande.png";
+                iconeTempo = hora ? "assets/sol-grande.png" : "assets/lua.png";
                 frase = hora ? frasesDia.sol : frasesNoite.sol;
                 break;
             case 2:
-                iconeTempo = "assets/dia-nublado-grande.png";
+                iconeTempo = hora ? "assets/dia-nublado-grande.png" : "assets/noite-nublada.png";
                 frase = hora ? frasesDia.parcialmenteNublado : frasesNoite.parcialmenteNublado;
                 break;
             case 3: case 45: case 48:
